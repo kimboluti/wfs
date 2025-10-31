@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yoga Class Sign-Up</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2em; background: #f4f4f4; }
+    h1 { color: #346751; }
+    form { background: #fff; padding: 1em; border-radius: 5px; max-width: 400px; margin-bottom: 2em; }
+    label, input, select { display: block; margin-bottom: 1em; }
+    input[type="submit"] { background: #346751; color: #fff; border: none; padding: 0.5em 1em; cursor: pointer; }
+    a.button { display: inline-block; margin: 1em 1em 0 0; background: #346751; color: #fff; padding: .5em 1em; text-decoration: none; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Yoga Class Sign-Up</h1>
+  <form action="https://docs.google.com/forms/d/FORM_ID/formResponse" method="POST" target="hidden_iframe">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="entry.XXXXXX" required>
+    
+    <label for="class">Select Class:</label>
+    <select id="class" name="entry.YYYYYY" required>
+      <option value="Morning Flow">Morning Flow</option>
+      <option value="Power Yoga">Power Yoga</option>
+      <option value="Gentle Yoga">Gentle Yoga</option>
+      <option value="Restorative">Restorative</option>
+    </select>
+    
+    <label for="date">Class Date:</label>
+    <input type="date" id="date" name="entry.ZZZZZZ" required>
+    
+    <input type="submit" value="Sign Up">
+  </form>
+  
+  <iframe name="hidden_iframe" style="display:none;"></iframe>
+  <a class="button" href="https://calendar.google.com/calendar/u/0/r" target="_blank">Book on Google Calendar</a>
+  <a class="button" href="https://docs.google.com/spreadsheets/d/SPREADSHEET_ID/edit" target="_blank">View Sign-Up Sheet</a>
+</body>
+</html>
